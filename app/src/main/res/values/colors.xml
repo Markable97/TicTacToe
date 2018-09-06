@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="player1">#04d9ff</color>
+    <color name="player2">#ff073a</color>
+    <color name="draw">#7cfc00</color>
+
+    <color name="white">#ffffff</color>
+    <color name="won">#ffff86</color>
+    <color name="figurki_O">#e91e63</color>
+    <color name="figurki_X">#92fc16</color>
+
+    <color name="fon_win_O">#64e91e63</color>
+    <color name="fon_win__X">#6492fc16</color>
+
+</resources>

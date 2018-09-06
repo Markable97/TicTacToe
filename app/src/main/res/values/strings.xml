@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TIC TAC TOE</string>
+    <string name="clear_achievements">Resetting achievements</string>
+    <string name="easy">EASY</string>
+    <string name="medium">MEDIUM</string>
+    <string name="hard">HARD</string>
+    <string name="you_win">You</string>
+    <string name="draw_game">Draw</string>
+    <string name="android_win">Android</string>
+    <string name="button_clear">NEXT</string>
+    <string name="choose_level">Choose a level of play</string>
+    <string name="game_one">ONE PLAYER</string>
+    <string name="game_two">TWO PLAYER</string>
+    <string name="achivment">ACHIVMENTS</string>
+
+    <string-array name="array_achivments">
+        <item>Play 5 games</item>
+        <item>Win 5 games</item>
+        <item>Play with friends</item>
+        <item>Play to easy level 5 games</item>
+    </string-array>
+
+</resources>

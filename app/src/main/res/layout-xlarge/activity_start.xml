@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/button_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_star"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/game_one" />
+
+    <Button
+        android:id="@+id/button_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_android"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="20dp"
+        android:text="@string/game_two"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_android"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="72dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/easy"
+            android:textAlignment="textStart" />
+
+        <RadioButton
+            android:id="@+id/rb_mediun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/medium"
+            android:textAlignment="textStart" />
+
+        <RadioButton
+            android:id="@+id/rb_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start|end"
+            android:text="@string/hard"
+            android:textAlignment="textStart" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_launcher"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_achivments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="34dp"
+        android:drawableRight="@android:drawable/ic_menu_help"
+        android:gravity="center"
+        android:text="@string/achivment"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/im_pos1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        android:layout_alignBottom="@+id/tv_achivments"
+        android:layout_toEndOf="@+id/tv_achivments"
+        android:layout_marginStart="12dp" />
+
+    <ImageView
+        android:id="@+id/im_pos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/im_pos1"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/im_pos1"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <ImageView
+        android:id="@+id/im_pos3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/im_pos1"
+        android:layout_alignTop="@+id/im_pos1"
+        android:visibility="invisible"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/im_pos4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/im_pos2"
+        android:layout_alignTop="@+id/im_pos2"
+        android:visibility="invisible"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+</RelativeLayout>
